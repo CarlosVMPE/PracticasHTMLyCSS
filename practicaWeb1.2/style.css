@@ -1,0 +1,101 @@
+*{
+	margin: 0px;
+
+}
+
+.fondo{
+	width: 100%;
+	max-height: 350px;
+	position:relative;
+}
+
+
+.logo{
+	position:absolute;
+	top: 10px;
+	margin: 10px;
+}
+
+.cat{
+	position:absolute;
+	top: 10px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+.derecha{
+	position:absolute;
+	color: #fff;
+	top: 50px;
+	right: 0px;
+	margin-right: 20px;
+}
+
+.navbarhe{
+	padding: 0px;
+	margin: 0px;
+}
+
+nav{
+	text-align: center;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+
+}
+
+nav ul li{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+nav ul li a{
+	margin: 20px 5px;
+	font-size: 20px;
+}
+
+nav ul li:hover{
+	color: #f7f7f7;
+	background: #24518C;
+}
+
+#noHover:hover{
+	background: #343a40;
+}
+
+div.relative {
+    position: relative;
+    width: 100%;
+}
+
+.imagenLogo{
+	margin: 10px;
+}
+
+
+.fondo2{
+   width: 100%;
+   max-height: 350px;
+}
+
+div.absolute {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: 100px auto;
+    width: 200px;
+    /* height: 100px; */
+}
+
+.carousel-indicators li{
+        height: 25px !important;
+        border-radius: 50%;
+ }
