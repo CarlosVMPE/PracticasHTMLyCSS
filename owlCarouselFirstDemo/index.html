@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Owl Carousel</title>
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+	 
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 
+	
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-2 col-sm-2 col-md-2 col-lg-1 my-auto">
+				<a class="btn prev">Previous</a>
+			</div>
+			
+			<div class="col-8 col-sm-8 col-md-8 col-lg-10">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+				  <div class="item">
+				  	<div class="card">
+					  <img class="card-img-top" src="Capa 23.png">
+					  <div class="card-body text-dark">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				  </div>
+				  <div class="item"><h1>2</h1></div>
+				  <div class="item"><h1>3</h1></div>
+				  <div class="item"><h1>4</h1></div>
+				  <div class="item"><h1>5</h1></div>
+				  <div class="item"><h1>6</h1></div>
+				  <div class="item"><h1>7</h1></div>
+				  <div class="item"><h1>8</h1></div>
+				  <div class="item"><h1>9</h1></div>
+				  <div class="item"><h1>10</h1></div>
+				  <div class="item"><h1>11</h1></div>
+				  <div class="item"><h1>12</h1></div>
+				  <div class="item"><h1>13</h1></div>
+				  <div class="item"><h1>14</h1></div>
+				  <div class="item"><h1>15</h1></div>
+				  <div class="item"><h1>16</h1></div>
+				</div>
+			</div>
+
+			<div class="col-2 col-sm-2 col-md-2 col-lg-1 my-auto">
+				<a class="btn next">Next</a>
+			</div>
+		</div>
+
+	</div>
+	 
+	<div class="customNavigation">
+	  <a class="btn prev">Previous</a>
+	  <a class="btn next">Next</a>
+	  <a class="btn play">Autoplay</a>
+	  <a class="btn stop">Stop</a>
+	</div>
+
+	<!--  jQuery 1.7+  -->
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+	 
+	<!-- Include js plugin -->
+	<script src="owl-carousel/owl.carousel.js"></script>
+
+	<script>
+		$(document).ready(function() {
+ 
+  var owl = $("#owl-demo");
+ 
+  owl.owlCarousel({
+      items : 4, //10 items above 1000px browser width
+      itemsDesktop : [1000,4], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,2], // betweem 900px and 601px
+      itemsTablet: [600,1], //2 items between 600 and 0
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+  });
+ 
+  // Custom Navigation Events
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
+  $(".play").click(function(){
+    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+  })
+  $(".stop").click(function(){
+    owl.trigger('owl.stop');
+  })
+ 
+});
+	</script>
+</body>
+</html>
